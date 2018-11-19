@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mirillis</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	
+	<header>
+		<a href="index.html">
+			<div class="logo">
+				<h1>UNILAB</h1>
+			</div>
+		</a>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<p>Location</p>
+		<div id="map"></div>
+	</main>
+
+	<footer>
+
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="blog.html">BLOG</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="location.html">LOCATION</a>
+		</nav>
+
+		<div class="logo">
+			<h1>UNILAB</h1>
+		</div>
+
+		<div class="social">
+			<a href="#"><img src="img/em.png" alt=""></a>
+			<a href="#"><img src="img/face.png" alt=""></a>
+			<a href="#"><img src="img/goo.png" alt=""></a>
+			<a href="#"><img src="img/inst.png" alt=""></a>
+			<a href="#"><img src="img/pint.png" alt=""></a>
+		</div>
+
+		<p>2018</p>
+
+	</footer>
+
+	<script>
+		function initMap() {
+	 	 var uluru = {lat: 54.514470, lng: 36.242436};
+	  	var map = new google.maps.Map(
+	     document.getElementById('map'), {zoom: 8, center: uluru});
+	  	var marker = new google.maps.Marker({position: uluru, map: map});
+		}		
+	</script>
+
+	<script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF6L7Dvp8TLqf1g-niw0K3DLQ_OFZ7Gcc&callback=initMap">
+	</script>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
