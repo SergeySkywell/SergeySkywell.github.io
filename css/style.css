@@ -38,6 +38,7 @@ nav {
 	background-color: #fff;
 	font-size: 14px;
 	margin-top: 40px;
+	margin-left: 15%;
 }
 
 .topnav a {
@@ -79,10 +80,10 @@ nav {
 	width: 30%;
 }
 
-/*PROJECTS*/
+/*PRODUCT*/
 
 .gallery {
-	width: 80%;
+	width: 70%;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
